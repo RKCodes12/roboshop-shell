@@ -6,7 +6,7 @@ INSTANCES=("mongodb" "redis" "mysql" "rabbitmq" "catalogue" "user" "cart" "shipp
 ZONE_ID=Z02087502MYRO2XATLHC3 # replace your zone ID
 DOMAIN_NAME="ramakrishna.website"
 
-for i in "${INSTANCES[@]}"
+for i in "${INSTANCES[@]}"     
 do
     if [ $i == "mongodb" ] || [ $i == "mysql" ] || [ $i == "shipping" ]
     then
